@@ -11,6 +11,19 @@ FEATURES
 ->Uses libqrencode for encoding
 
 ->Uses libpng to generate the PNG file
+Built a CLI application in C++ that converts any text input into a QR code and saves it as a .png file.
+
+Utilized libqrencode for QR code generation and libpng for image rendering.
+
+Implemented margin and scaling options for better visual quality and customization.
+
+Included error handling for file operations and library usage to improve robustness.
+
+Demonstrated effective integration of third-party C/C++ libraries in real-world applications.
+
+Ensured memory management and stability using structured exception checks (setjmp) and proper cleanup.
+
+
 
 ## Prerequisites
 Before compiling and running the program, install the necessary libraries:
