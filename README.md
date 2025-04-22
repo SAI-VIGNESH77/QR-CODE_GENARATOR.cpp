@@ -43,6 +43,14 @@ g++ -o qr_generator qr_generator.cpp -lqrencode -lpng
 Output  
 
 -->A PNG file (qrcode.png) containing the generated QR code.
+QRGenPro/
+├── CMakeLists.txt
+├── README.md
+├── src/
+│   └── main.cpp
+└── output/
+    └── qrcode.png (after running)
+
 
 Future Improvements  
 
@@ -51,4 +59,40 @@ Future Improvements
 -->Implement a GUI interface.
 
 -->Allow setting QR code size and error correction level.
+
+*Improvements 
+
+QRGenPro/
+├── CMakeLists.txt
+├── README.md
+├── src/
+│   └── main.cpp
+└── output/
+    └── qrcode.png (after running)
+
+# QRGenPro
+
+QRGenPro is a command-line tool written in C++ that generates QR codes from user input and exports them as PNG images. It uses `libqrencode` for encoding and `libpng` for image generation.
+
+## Features
+
+- Takes user input and converts it into a QR code.
+- Saves the output as a high-resolution PNG image.
+- Uses customizable size and margin for QR layout.
+- Error-handling for file and memory operations.
+
+## Dependencies
+
+- [libqrencode](https://fukuchi.org/works/qrencode/)
+- [libpng](http://www.libpng.org/pub/png/libpng.html)
+
+Install on Ubuntu/Debian:
+```bash
+sudo apt-get install libqrencode-dev libpng-dev
+
+mkdir build
+cd build
+cmake ..
+make
+
 
